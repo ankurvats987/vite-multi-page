@@ -1,0 +1,1 @@
+import"./main-BBAoEA1N.js";function n(){import.meta.url,import("_").catch(()=>1),async function*(){}().next()}document.addEventListener("DOMContentLoaded",()=>{console.log("About page loaded"),document.querySelector("main").classList.add("fade-in")});export{n as __vite_legacy_guard};

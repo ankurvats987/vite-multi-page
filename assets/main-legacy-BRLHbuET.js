@@ -1,0 +1,1 @@
+System.register(["./main-legacy-5B6wJ2bv.js"],(function(e,t){"use strict";return{setters:[null],execute:function(){document.addEventListener("DOMContentLoaded",(()=>{console.log("Main page loaded")}))}}}));
