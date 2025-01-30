@@ -1,0 +1,21 @@
+// Common styles
+body {
+    font-family: $primary-font;
+    color: $text-color;
+    background-color: $bg-color;
+}
+
+nav {
+    padding: $spacing-md;
+    background-color: $nav-bg;
+    
+    a {
+        margin-right: $spacing-sm;
+        color: $link-color;
+        text-decoration: none;
+        
+        &:hover {
+            color: $link-hover-color;
+        }
+    }
+}

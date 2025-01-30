@@ -1,0 +1,93 @@
+// First import variables
+@import './variables';
+
+// Then import common styles
+@import './common';
+
+// Contact form styles
+.contact-form {
+    max-width: 600px;
+    margin: $spacing-lg auto;
+    padding: $spacing-lg;
+    background-color: lighten($bg-color, 2%);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .form-group {
+        margin-bottom: $spacing-md;
+
+        label {
+            display: block;
+            margin-bottom: $spacing-sm;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: $spacing-sm;
+            border: 1px solid darken($bg-color, 20%);
+            border-radius: 4px;
+            
+            &:focus {
+                outline: none;
+                border-color: $primary-color;
+            }
+        }
+
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+    }
+
+    button {
+        background-color: $primary-color;
+        color: white;
+        padding: $spacing-sm $spacing-lg;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: darken($primary-color, 10%);
+        }
+    }
+}
+
+// Message styles
+.message {
+    padding: $spacing-sm $spacing-md;
+    margin-bottom: $spacing-md;
+    border-radius: 4px;
+    text-align: center;
+
+    &-success {
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+    }
+
+    &-error {
+        background-color: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+    }
+}
+
+// Animation
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
